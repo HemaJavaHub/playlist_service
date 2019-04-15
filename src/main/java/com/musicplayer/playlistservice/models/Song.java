@@ -5,7 +5,7 @@ import java.time.Duration;
 
 public class Song {
 
-	private Integer id;
+	private String id;
 
 	private String title;
 	private String artist;
@@ -22,11 +22,11 @@ public class Song {
 		this.length = length;
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

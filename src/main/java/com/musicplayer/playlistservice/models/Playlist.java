@@ -15,10 +15,10 @@ public class Playlist {
     private String name;
 
     @ElementCollection
-    private List<Integer> songlistIDs;
+    private List<String> songlistIDs;
 
     public Playlist() {
-        songlistIDs = new ArrayList<Integer>();
+        songlistIDs = new ArrayList<String>();
     }
 
     public String getName() {
@@ -29,7 +29,7 @@ public class Playlist {
         this.name = name;
     }
 
-    public List<Integer> getSonglist() {
+    public List<String> getSonglist() {
         return songlistIDs;
     }
 
@@ -41,7 +41,7 @@ public class Playlist {
         return id;
     }
 
-    public void addSong(Integer songId) {
+    public void addSong(String songId) {
         this.songlistIDs.add(songId);
     }
 
@@ -50,7 +50,7 @@ public class Playlist {
     }
 
     public void moveSong(int currentIndex, int newIndex) {
-        int songToMove = this.songlistIDs.get(currentIndex);
+        String songToMove = this.songlistIDs.get(currentIndex);
         this.songlistIDs.remove(songToMove);
         this.songlistIDs.add(newIndex,songToMove);
     }

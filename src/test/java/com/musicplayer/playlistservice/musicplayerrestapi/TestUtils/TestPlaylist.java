@@ -13,7 +13,7 @@ import java.util.List;
 public class TestPlaylist{
 
     private static Playlist playlist;
-    private static List<Integer> songIds = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
+    private static List<String> songIds = new ArrayList<String>(Arrays.asList("5caf47541691e064dcb040dd"));
 
 
     public static Playlist getTestPlaylist(){
